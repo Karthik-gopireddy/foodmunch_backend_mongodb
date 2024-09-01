@@ -36,3 +36,7 @@ app.use("/uploads",express.static("uploads"));
 app.listen(PORT,()=>{
     console.log(`server is running on Port: ${PORT}`)
 })
+
+app.use("/",(req,res)=>{
+    res.send("<h1>Welcome to Food Munch");
+})
